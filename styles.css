@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nabla&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  text-align: center;
+  padding: 10px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.inoutviajes.com/fotos/editor/20594/1658302917_oku-restaurant-7.jpg') center/cover no-repeat;
+  border-bottom: 2px solid red;
+  font-size: 36px;
+  position: relative; /* Asegura que el contenido dentro del header esté posicionado correctamente */
+}
+
+.header-title {
+  font-size: 60px;
+  font-family: 'Bebas Neue', sans-serif;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: red;
+  position: relative; /* Para que el z-index funcione correctamente */
+  z-index: 1; /* Eleva el título para que esté por encima de la imagen de fondo */
+}
+
+
+
+.subheader {
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+  padding: 10px 0;
+}
+
+.subheader-button {
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 10px 20px; /* Agregar espacio alrededor del botón */
+  margin: 0; /* Eliminar margen para un efecto completo */
+  font-family: 'Bebas Neue', sans-serif; 
+}
+
+.subheader-button:hover {
+  background-color: darkred;
+  margin: -10px -20px; /* Crear un efecto de sobremarca más grande */
+}
+
+.section {
+  padding: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid red; /* Cambio de amarillo a rojo */
+  margin-top: 30px;
+}
+
+.section h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 33px;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  opacity: 0.8;
+  text-align: center;
+  color: red; /* Cambio de amarillo a rojo */
+}
+
+.product {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px rgba(255, 0, 0, 0.3); /* Cambio de amarillo a rojo */
+  transition: transform 0.3s ease;
+}
+.product:hover {
+  transform: scale(1.01);
+  }
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+p {
+  margin: 5px 0;
+}
