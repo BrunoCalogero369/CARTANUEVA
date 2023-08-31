@@ -35,10 +35,12 @@ body {
 }
 
 
-
 .subheader {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: flex-start; /* Alinea los botones hacia la izquierda */
+  align-items: center; /* Centra verticalmente los botones */
+  overflow-x: auto;
   background-color: red;
   padding: 10px 0;
 }
@@ -47,18 +49,20 @@ body {
   background-color: red;
   border: none;
   color: white;
-  font-size: 32px;
+  font-size: 23px;
   cursor: pointer;
   transition: background-color 0.3s;
-  padding: 10px 20px; /* Agregar espacio alrededor del botón */
-  margin: 0; /* Eliminar margen para un efecto completo */
-  font-family: 'Bebas Neue', sans-serif; 
+  padding: 10px 15px; /* Reducción del espacio alrededor del botón */
+  margin: 3px; /* Espacio entre los botones */
+  font-family: 'Bebas Neue', sans-serif;
+  white-space: nowrap;
 }
 
 .subheader-button:hover {
   background-color: darkred;
-  margin: -10px -20px; /* Crear un efecto de sobremarca más grande */
+  transform: scale(1.05);
 }
+
 
 .section {
   padding: 20px;
@@ -103,3 +107,4 @@ body {
 p {
   margin: 5px 0;
 }
+
